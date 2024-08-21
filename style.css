@@ -1,0 +1,175 @@
+*,
+*::after,
+*::before {
+  box-sizing: inherit;
+}
+html {
+  box-sizing: border-box;
+  overflow-x: hidden;
+}
+body {
+  height: 100svh;
+  margin: 0;
+  background-color: rgb(239, 239, 239);
+  color: rgb(173, 82, 226);
+  font-weight: 400;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+}
+.main {
+  position: relative;
+  left: calc(80px + 2vh);
+  top: 2vh;
+  display: grid;
+  height: 100vh;
+  gap: 2vh;
+}
+.container {
+  width: calc(100vw - (80px + 3rem));
+  background-color: rgb(255, 255, 255);
+  border-radius: 10px;
+  padding: 0.5rem 0 0.5rem 0;
+}
+.container > * {
+  margin-left: 1em;
+}
+#top-dashboard {
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+}
+#dashboard-left {
+  margin-left: 1em;
+  margin-top: auto;
+  margin-bottom: auto;
+}
+#dashboard-left * {
+  margin-top: auto;
+  margin-bottom: auto;
+}
+#dashboard-right {
+  margin-right: 1em;
+  position: relative;
+}
+.search-bar {
+  position: relative;
+  top: 0;
+  margin-right: 100px;
+}
+.search-bar * {
+  border: 2px solid lime;
+}
+#dashboard-right img {
+  position: absolute;
+  right: 0;
+}
+#dashboard-right input {
+  border: 0;
+  padding: 1em 1em 1em 2em;
+  border-radius: 10px;
+  background-color: gainsboro;
+}
+#dashboard-right input:focus {
+  outline: none;
+}
+.search-icon {
+  display: inline;
+  font-size: 120%;
+}
+#top-dashboard img {
+  height: 42px;
+  width: 42px;
+  object-fit: cover;
+  border-radius: 50%;
+}
+.credit-cards {
+  margin-left: 1em;
+  margin-right: 1em;
+  height: 8em;
+  gap: 1em;
+  display: flex;
+  overflow: auto clip;
+}
+.credit-cards > * {
+  flex: 0 0 auto;
+}
+.cards {
+  width: 15em;
+  height: 7em;
+  padding: 1em;
+  color: black;
+  border-radius: 10px;
+  position: relative;
+}
+.cards img {
+  width: 50px;
+  height: 50px;
+  object-fit: cover;
+  border-radius: 50%;
+  position: absolute;
+  right: 1em;
+  top: 1em;
+}
+.asterisks {
+  letter-spacing: 0.2em;
+  color: gray;
+  position: absolute;
+  bottom: 1em;
+  display: flex;
+  gap: 0.65em;
+}
+.cards span {
+  font-weight: 900;
+}
+.red-card {
+  background-color: rgb(255, 192, 192);
+}
+.purple-card {
+  background-color: rgb(232, 208, 255);
+}
+.green-card {
+  background-color: rgb(217, 255, 195);
+}
+.blue-card {
+  background-color: rgb(165, 202, 250);
+}
+.finance {
+  width: 88.7vw;
+  font-size: 80%;
+  color: gray;
+  margin-right: auto;
+  border-collapse: collapse;
+  overflow-y: auto;
+}
+.finance caption {
+  color: rgb(173, 82, 226);
+  font-size: 1rem;
+  text-align: left;
+}
+.finance button {
+  cursor: pointer;
+  border: 0;
+  color: rgb(7, 141, 7);
+  background: none;
+}
+.finance tr:first-child {
+  font-weight: 900;
+  color: white;
+  background-color: blueviolet;
+}
+html .finance tr:nth-child(6) {
+  font-weight: 900;
+  color: white;
+  background-color: blueviolet;
+}
+.finance :nth-child(2n of tr) {
+  background-color: rgb(239, 239, 239);
+}
+.sidebar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100vh;
+  width: 80px;
+  background-color: blueviolet;
+}
